@@ -46,9 +46,12 @@
 #define BACK(set_map)       *prev((set_map).end(), 1)
 #define FRONT(set_map)      *(set_map).begin()
 
+#define POP(var, container) auto var=(container.front()); container.pop();
+
 using PII = std::pair<int,int>;
 using LL  = long long;
 using VI  = std::vector<int>;
+using CVI = const VI;
 using VLL = std::vector<LL>;
 using VVI = std::vector<VI>;
 using VVLL = std::vector<VLL>;
